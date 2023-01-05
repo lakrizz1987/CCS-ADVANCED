@@ -1,0 +1,7 @@
+@import url(variables.css);
+
+div {
+    width: var(--box-width);
+    height: var(--box-height);
+    background-color: var(--background-box);
+}
