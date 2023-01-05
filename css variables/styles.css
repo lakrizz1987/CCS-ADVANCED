@@ -4,4 +4,5 @@ div {
     width: var(--box-width);
     height: var(--box-height);
     background-color: var(--background-box);
+    transition: background-color 2s ease-in-out, width 2s ease-in-out, height 2s ease-in-out 0.2s;
 }
