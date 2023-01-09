@@ -76,4 +76,8 @@ button {
   padding: 2em 3em;
   background-color: red;
   text-align: center;
+}
+
+.box--3 {
+  border: 2px solid black;
 }/*# sourceMappingURL=site.css.map */
