@@ -70,4 +70,10 @@ button {
   background-color: white;
   color: black;
   transform: scale(2);
+}
+
+.box--3 {
+  padding: 2em 3em;
+  background-color: red;
+  text-align: center;
 }/*# sourceMappingURL=site.css.map */

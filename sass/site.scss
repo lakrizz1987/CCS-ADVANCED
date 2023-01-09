@@ -81,3 +81,14 @@ button{
         }
     }
 }
+
+%redSection{
+    padding: 2em 3em;
+    background-color: red;
+    text-align: center
+}
+
+.box--3{
+    @extend %redSection;
+}
+
