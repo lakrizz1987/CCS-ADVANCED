@@ -82,4 +82,49 @@ button {
   border: 2px solid black;
   width: 80%;
   margin: auto;
+}
+
+li {
+  height: 2em;
+}
+
+li:nth-child(1) {
+  margin-top: 50px;
+  background-color: #850000;
+  width: 10%;
+}
+
+li:nth-child(2) {
+  background-color: #a30000;
+  width: 20%;
+}
+
+li:nth-child(3) {
+  background-color: #c20000;
+  width: 30%;
+}
+
+li:nth-child(4) {
+  background-color: #e00000;
+  width: 40%;
+}
+
+li:nth-child(5) {
+  background-color: red;
+  width: 50%;
+}
+
+li:nth-child(6) {
+  background-color: #ff1f1f;
+  width: 60%;
+}
+
+li:nth-child(7) {
+  background-color: #ff3d3d;
+  width: 70%;
+}
+
+li:nth-child(8) {
+  background-color: #ff5c5c;
+  width: 80%;
 }/*# sourceMappingURL=site.css.map */

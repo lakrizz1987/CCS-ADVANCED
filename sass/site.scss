@@ -94,3 +94,20 @@ button {
     width: 100%-20%;
     margin: auto;
 }
+
+li {
+    height: 2em;
+}
+
+$base-color: rgb(102, 0, 0);
+
+@for $i from 1 to 9 {
+    li:nth-child(#{$i}) {
+        @if $i == 1 {
+            margin-top: 50px;
+        }
+
+        background-color: lighten($base-color, $i*6%);
+        width:$i*10% ;
+    }
+}
