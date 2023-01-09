@@ -20,6 +20,24 @@ h6 {
   color: rgb(24, 6, 53);
 }
 
+.box--1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .box--1 h1 {
   text-align: center;
+}
+.box--1 p {
+  text-align: center;
+  color: rgb(252, 223, 223);
+}
+.box--1 button {
+  background-color: rgb(24, 6, 53);
+  color: rgb(252, 223, 223);
+  cursor: pointer;
+}
+.box--1 button:hover {
+  background-color: rgb(0, 183, 255);
 }/*# sourceMappingURL=site.css.map */
