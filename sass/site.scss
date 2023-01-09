@@ -1,6 +1,9 @@
+@import 'variables';
+
 body {
     margin: 0;
     padding: 0;
+    background-color: $backroundColor;
 }
 
 *,
@@ -16,4 +19,11 @@ h4,
 h5,
 h6 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $headingColor;
+}
+
+.box--1{
+    h1{
+        text-align: center;
+    }
 }

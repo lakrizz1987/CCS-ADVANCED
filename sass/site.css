@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: rgb(162, 162, 250);
 }
 
 *,
@@ -16,4 +17,9 @@ h4,
 h5,
 h6 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(24, 6, 53);
+}
+
+.box--1 h1 {
+  text-align: center;
 }/*# sourceMappingURL=site.css.map */
