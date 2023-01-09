@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixin';
 
 body {
     margin: 0;
@@ -22,28 +23,61 @@ h6 {
     color: $headingColor;
 }
 
-.box--1{
+button{
+    padding: 0.2em 0.5em;
+    cursor: pointer;
+    border: none;
+}
+
+.box--1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    h1{
+    h1 {
         text-align: center;
     }
 
-    p{
+    p {
         text-align: center;
         color: $whiteMixColor;
     }
 
-    button{
+    button {
         background-color: $headingColor;
         color: $whiteMixColor;
-        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(255, 0, 140, 0.486);
+        }
+    }
+}
+
+.box--2 {
+    @include flexStart;
+
+    p {
+        @include textColor(rgb(85, 5, 2));
+    }
+
+    button {
         
-        &:hover{
-            background-color: rgb(0, 183, 255);
+        background-color: black;
+        @include textColor(white);
+      
+        transition: transform 2s ease-in-out;
+
+        &::after {
+            content: '@';
+            margin: 0.2em;
+        }
+
+        &:hover {
+            background-color: white;
+            @include textColor(black);
+            transform: scale(2);
+            
         }
     }
 }
