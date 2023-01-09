@@ -23,7 +23,7 @@ h6 {
     color: $headingColor;
 }
 
-button{
+button {
     padding: 0.2em 0.5em;
     cursor: pointer;
     border: none;
@@ -62,10 +62,10 @@ button{
     }
 
     button {
-        
+
         background-color: black;
         @include textColor(white);
-      
+
         transition: transform 2s ease-in-out;
 
         &::after {
@@ -77,19 +77,20 @@ button{
             background-color: white;
             @include textColor(black);
             transform: scale(2);
-            
+
         }
     }
 }
 
-%redSection{
+%redSection {
     padding: 2em 3em;
     background-color: red;
     text-align: center
 }
 
-.box--3{
+.box--3 {
     @extend %redSection;
-    border: 2px solid  black;
+    border: 2px solid black;
+    width: 100%-20%;
+    margin: auto;
 }
-
