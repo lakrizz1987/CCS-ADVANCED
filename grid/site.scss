@@ -1,6 +1,47 @@
-*,::before,::after{
+*,
+::before,
+::after {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
+main {
+    display: grid;
+    justify-items: stretch;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+
+    div {
+        height: 12em;
+        border: 2px solid black;
+        margin: 2px;
+    }
+
+    .box-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: red;
+    }
+
+    .box-2 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: yellow;
+    }
+
+    .box-3 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-color: green;
+        
+        
+    }
+}
