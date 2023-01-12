@@ -3,20 +3,26 @@
 ::after {
     box-sizing: border-box;
     margin: 0;
-    padding: 10px;
+    
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main {
     display: grid;
-    justify-items: stretch;
+    height: 600px;
+    width: 80%;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-
+    gap: 1em;
 
     div {
-        height: 12em;
-        border: 2px solid black;
-        margin: 2px;
+        border: 2px solid grey;
+        box-shadow: 0 0 2px 0 black;
     }
 
     .box-1 {
@@ -41,7 +47,5 @@ main {
         grid-row-start: 3;
         grid-row-end: 5;
         background-color: green;
-        
-        
     }
 }
