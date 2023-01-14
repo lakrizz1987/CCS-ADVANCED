@@ -1,0 +1,42 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.wraper {
+  width: 100rem;
+  height: 50rem;
+  border: 1px solid black;
+  margin: 8rem auto;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-areas: "nav nav nav nav nav" "main-1 main-1 main-2 main-2 aside" "main-1 main-1 main-2 main-2 aside" "main-1 main-1 main-2 main-2 aside" "main-1 main-1 main-2 main-2 aside" "footer footer footer footer footer";
+  grid-auto-flow: dense;
+}
+.wraper .box-1 {
+  background-color: black;
+  grid-area: nav;
+}
+.wraper .box-2 {
+  background-color: rgb(241, 0, 0);
+  grid-area: footer;
+}
+.wraper .box-3 {
+  background-color: rgb(172, 215, 17);
+  grid-area: main-1;
+}
+.wraper .box-4 {
+  background-color: rgb(232, 9, 143);
+  grid-area: aside;
+}
+.wraper .box-5 {
+  background-color: rgb(49, 9, 226);
+  grid-area: main-2;
+}/*# sourceMappingURL=site.css.map */
